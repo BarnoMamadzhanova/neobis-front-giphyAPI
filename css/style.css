@@ -20,7 +20,7 @@ body {
   align-items: center;
 }
 .header .header__flexbox .header__logobox img {
-  background: transparent;
+  background: none;
   height: 40px;
 }
 .header .header__flexbox .header__searchbox .header__search-form {
@@ -54,4 +54,17 @@ body {
 }
 .header .header__flexbox .header__searchbox .header__search-form button:hover img {
   opacity: 0.6;
+}
+
+main {
+  margin: 2rem;
+}
+main .main-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+main .main-box .content-box__figure img {
+  height: 250px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

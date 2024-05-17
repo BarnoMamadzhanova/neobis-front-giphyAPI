@@ -24,7 +24,7 @@ body {
 
         .header__logobox {
             img {
-                background: transparent;
+                background: none;
                 height: 40px;
             }
         }
@@ -67,6 +67,24 @@ body {
                     }
                 }
 
+            }
+
+        }
+    }
+}
+
+main {
+    margin: 2rem;
+
+    .main-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+
+        .content-box__figure {
+            img {
+                height: 250px;
+                width: 100%;
             }
 
         }
