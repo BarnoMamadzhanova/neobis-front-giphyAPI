@@ -26,6 +26,8 @@ body {
             img {
                 background: none;
                 height: 40px;
+                mix-blend-mode: color-burn;
+                filter: brightness(1) invert(1);
             }
         }
 
@@ -83,22 +85,14 @@ main {
 
         .content-box__figure {
             img {
-                height: 280px;
+                // height: 280px;
                 width: 100%;
+                aspect-ratio: 4 / 3;
+                object-fit: cover;
             }
 
         }
     }
-}
-
-@media screen and (max-width: 900px) {
-
-    .content-box__figure {
-        img {
-            height: 220px !important;
-        }
-    }
-
 }
 
 
@@ -111,11 +105,6 @@ main {
             grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
 
-            .content-box__figure {
-                img {
-                    height: 250px;
-                }
-            }
         }
     }
 }
@@ -138,11 +127,6 @@ main {
             grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
 
-            .content-box__figure {
-                img {
-                    height: 250px;
-                }
-            }
         }
     }
 }
@@ -165,11 +149,6 @@ main {
             grid-template-columns: repeat(2, 1fr);
             gap: 1.2rem;
 
-            .content-box__figure {
-                img {
-                    height: 230px;
-                }
-            }
         }
     }
 }
@@ -185,7 +164,7 @@ main {
         .header__logobox {
             img {
                 background: none;
-                height: 31px !important;
+                height: 30px !important;
             }
         }
     }
@@ -198,11 +177,6 @@ main {
             grid-template-columns: repeat(1, 1fr);
             gap: 1.2rem;
 
-            .content-box__figure {
-                img {
-                    height: fit-content;
-                }
-            }
         }
     }
 }
