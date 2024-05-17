@@ -53,7 +53,7 @@ body {
                 button {
                     position: absolute;
                     top: 3px;
-                    right: 3px;
+                    right: 5px;
                     width: 30px;
                     height: 100%;
                     border-radius: 50%;
@@ -79,14 +79,130 @@ main {
     .main-box {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
+        gap: 1.5rem;
 
         .content-box__figure {
             img {
-                height: 250px;
+                height: 280px;
                 width: 100%;
             }
 
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .content-box__figure {
+        img {
+            height: 220px !important;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+    main {
+        margin: 1.5rem;
+
+        .main-box {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+
+            .content-box__figure {
+                img {
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .header__flexbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    main {
+        margin: 1.5rem;
+
+        .main-box {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+
+            .content-box__figure {
+                img {
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .header__flexbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    main {
+        margin: 1.2rem;
+
+        .main-box {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.2rem;
+
+            .content-box__figure {
+                img {
+                    height: 230px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .header__flexbox {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        row-gap: 0.8rem;
+
+        .header__logobox {
+            img {
+                background: none;
+                height: 31px !important;
+            }
+        }
+    }
+
+    main {
+        margin: 1.2rem;
+
+        .main-box {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1.2rem;
+
+            .content-box__figure {
+                img {
+                    height: fit-content;
+                }
+            }
         }
     }
 }
