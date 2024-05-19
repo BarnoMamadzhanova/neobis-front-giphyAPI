@@ -1,8 +1,16 @@
 // Sf2FMFg5ZDgB8uu0aboKsldCFJbmgN7h key Giphy API;
 
 document.addEventListener("DOMContentLoaded", getGifs);
+const searchInput = document.getElementById("search");
 const searchBtn = document.getElementById("btnSearch");
 const contentBox = document.querySelector("#content-box");
+
+searchInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    getGifs();
+  }
+});
 
 function getGifs() {
   searchBtn.addEventListener("click", (e) => {
@@ -16,9 +24,6 @@ function getGifs() {
     fetch(urlFetch)
       .then((response) => response.json())
       .then((content) => {
-        // console.log(content.data);
-        // console.log("META", content.meta);
-
         contentBox.innerHTML = "";
 
         for (let gif of content.data) {
