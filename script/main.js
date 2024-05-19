@@ -5,7 +5,7 @@ const searchInput = document.getElementById("search");
 const searchBtn = document.getElementById("btnSearch");
 const contentBox = document.querySelector("#content-box");
 
-searchInput.addEventListener("keydown", (e) => {
+searchInput.addEventListener("keyup", (e) => {
   if (e.key === "Enter") {
     e.preventDefault();
     getGifs();
